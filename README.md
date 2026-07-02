@@ -2,9 +2,9 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFu1buZizYN8-s1SiqsMyp9Sa-r8OUBSZUSmHSXLTbDtuT9A5f2pSlbvQ&s=10" alt="Banner" width="100%" height="180"/>
 </p>
 
-# 🚀 Softito Backend Developer Eğitimi — Proje Portföyü
+# 🚀 SoftITo Backend Developer Eğitimi — Proje Portföyü
 
-Bu depo, **Softito Backend Developer Eğitimi** kapsamında geliştirdiğim 9 projeyi bir araya getirir. Her proje **.NET & ASP.NET Core** ekosisteminde farklı mimari yaklaşımlar (N-Katmanlı, Monolitik, Client-Server), farklı veritabanı stratejileri (Code First / DB First) ve farklı veri erişim teknolojileri (EF Core, Dapper, ADO.NET) denenerek hazırlanmıştır.
+Bu depo, **SoftITo Backend Developer Eğitimi** kapsamında geliştirdiğim 9 projeyi bir araya getirir. Her proje **.NET & ASP.NET Core** ekosisteminde farklı mimari yaklaşımlar (N-Katmanlı, Monolitik, Client-Server), farklı veritabanı stratejileri (Code First / DB First) ve farklı veri erişim teknolojileri (EF Core, Dapper, ADO.NET) denenerek hazırlanmıştır.
 
 ---
 

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3_gmWDJYVdSc3siJjyIDZq62VdjfA9OfoHJx2Ey9SA&s=10" alt="Banner" width="100%"/>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3_gmWDJYVdSc3siJjyIDZq62VdjfA9OfoHJx2Ey9SA&s=10" alt="Banner" width="100%" height="180"/>
 </p>
 
 # 🚀 Softito Backend Developer Eğitimi — Proje Portföyü

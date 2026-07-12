@@ -4,13 +4,13 @@
 
 # 🚀 SoftITo Backend Developer Eğitimi — Proje Portföyü
 
-Bu depo, **SoftITo Backend Developer Eğitimi** kapsamında geliştirdiğim 9 projeyi bir araya getirir. Her proje **.NET & ASP.NET Core** ekosisteminde farklı mimari yaklaşımlar (N-Katmanlı, Monolitik, Client-Server), farklı veritabanı stratejileri (Code First / DB First) ve farklı veri erişim teknolojileri (EF Core, Dapper, ADO.NET) denenerek hazırlanmıştır.
+Bu depo, **SoftITo Backend Developer Eğitimi** kapsamında geliştirdiğim 9 proje ve bitirme projemi bir araya getirir. Her proje **.NET & ASP.NET Core** ekosisteminde farklı mimari yaklaşımlar (N-Katmanlı, Monolitik, Client-Server, Clean Architecture), farklı veritabanı stratejileri (Code First / DB First) ve farklı veri erişim teknolojileri (EF Core, Dapper, ADO.NET) denenerek hazırlanmıştır.
 
 ---
 
 ## 🧰 Teknoloji Yelpazesi
 
-`.NET 8 / 10` · `ASP.NET Core MVC` · `Razor Pages` · `Web API` · `Entity Framework Core` · `Dapper` · `ADO.NET` · `SQL Server` · `ASP.NET Core Identity` · `EPPlus` · `QuestPDF` · `Serilog` · `Bootstrap 5` · `jQuery / AJAX` · `Chart.js`
+`.NET 8 / 10` · `ASP.NET Core MVC` · `Razor Pages` · `Web API` · `Entity Framework Core` · `Dapper` · `ADO.NET` · `SQL Server` · `ASP.NET Core Identity` · `EPPlus` · `QuestPDF` · `QRCoder` · `Serilog` · `Bootstrap 5` · `jQuery / AJAX` · `Chart.js` · `Docker` · `Google Gemini AI`
 
 ---
 
@@ -167,6 +167,27 @@ MVC ön yüz katmanı, veritabanı işlemlerini doğrudan gerçekleştirmek yeri
 
 ---
 
+### 🔟 ✨ AI CodeReview Platform — *Bitirme Projesi*
+**Yapay zeka destekli, güvenli ve ölçeklenebilir bir kod inceleme & statik analiz platformu.**
+
+🔗 [github.com/yusufcengiz00/AI-Code-Review-System](https://github.com/yusufcengiz00/AI-Code-Review-System)
+
+Eğitimin bitirme projesi olarak geliştirilen bu platform, geliştiricilerin kodlarını güvenlik açıkları, performans darboğazları ve Clean Code standartları açısından saniyeler içinde analiz eder. **Clean Architecture** prensipleriyle tasarlanan sistem, yazma ve okuma yüklerini ayırmak için hibrit bir ORM stratejisi izler: veri tutarlılığı ve kimlik doğrulama için EF Core, dashboard gibi yüksek performans gerektiren okumalar için Stored Procedure destekli Dapper kullanılır.
+
+- 🏗️ **Mimari:** Clean Architecture · Web API + MVC · Hibrit ORM (EF Core yazma / Dapper okuma)
+- 🗄️ **Veritabanı:** SQL Server 2022 — 19 tablo (Identity tabloları + iş mantığı tabloları), Code First migration ile yönetilir
+- 🤖 **Google Gemini AI Analizi:** Güvenlik, performans ve okunabilirlik boyutlarında satır numarası, açıklama, gerekçe ve düzeltilmiş kod önerisi üreten AI motoru
+- 💬 **AI Kod Danışmanı:** Analiz edilen kod üzerinden özel sistem talimatlarıyla çalışan interaktif sohbet robotu
+- 📋 **Snippet Kütüphanesi:** Sık kullanılan kod parçacıklarının saklanıp tek tıkla analize gönderilmesi
+- 🔔 **Akıllı Bildirim Sistemi:** Analiz tamamlanma ve kota uyarılarını Tümü/Okunmuş/Okunmamış filtreleriyle sunan bildirim merkezi
+- 📊 **Raporlama:** QuestPDF & EPPlus ile Türkçe PDF/Excel çıktısı, QRCoder ile mobil erişim için dinamik QR kod
+- ⚙️ **Admin Modülü:** Kullanıcı/rol/kota yönetimi, dinamik Gemini API ayarları, duyuru sistemi ve gerçek zamanlı denetim günlükleri (Audit Logs)
+- 🔐 **Güvenlik:** JWT tabanlı rol yetkilendirmesi, SQL Server'ın recovery süresine dayanıklı otomatik yeniden bağlanma mekanizması
+- 🐳 **Konteynerleştirme:** Docker & Docker Compose ile tek komutla ayağa kalkan tam entegre ortam (SQL Server + API'ler + WebUI)
+- 🎨 **Tasarım:** Vanilla CSS3 tabanlı özel glassmorphic koyu tema, Bootstrap 5
+
+---
+
 ## 🧭 Proje Karşılaştırma Tablosu
 
 | # | Proje | Mimari | Veritabanı Yaklaşımı | Veri Erişimi | Öne Çıkan |
@@ -180,6 +201,7 @@ MVC ön yüz katmanı, veritabanı işlemlerini doğrudan gerçekleştirmek yeri
 | 7 | CodeVault | Client-Server | Code First | EF Core | Identity + REST API |
 | 8 | ShopZone | Hibrit API+MVC | DB First | Dapper + EF Core | Stored Procedure + Hibrit |
 | 9 | EcoSphere | N-Katmanlı + Areas | Code First | EF Core | Unit of Work + Serilog |
+| 🔟 | **AI CodeReview Platform** | Clean Architecture (API+MVC) | Code First | EF Core + Dapper (Hibrit) | **Bitirme Projesi** — Gemini AI, Docker, JWT |
 
 ---
 
